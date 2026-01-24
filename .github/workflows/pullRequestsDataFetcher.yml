@@ -1,0 +1,47 @@
+name: Pull Request Fetch
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  pullRequestFetch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Fetch Pull Requests
+        uses: octokit/graphql-action@v2.x
+        id: get_pull_requests
+        with:
+          query: |
+            query {
+              user(login: "manas0911user") {
+                pullRequests(last: 50, orderBy: {field: CREATED_AT, direction: DESC}) {
+                  totalCount
+                  nodes {
+                    title
+                    url
+                    state
+                    createdAt
+                    number
+                    additions
+                    deletions
+                    baseRepository {
+                      name
+                      url
+                      owner {
+                        login
+                        url
+                      }
+                    }
+                  }
+                }
+              }
+            }
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name: Log Pull Request Data
+        run: echo '${{ steps.get_pull_requests.outputs.data }}'

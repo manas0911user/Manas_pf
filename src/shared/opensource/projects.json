@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "name": "Big-Data-Project",
+      "description": "Phone Price prediction",
+      "url": "https://github.com/manas0911user/Big-Data-Project",
+      "languages": {
+        "nodes": [
+          {
+            "name": "Python"
+          },
+          {
+            "name": "CSS"
+          },
+          {
+            "name": "JavaScript"
+          },
+          {
+            "name": "HTML"
+          },
+          {
+            "name": "Shell"
+          }
+        ]
+      }
+    },
+    {
+      "name": "cloud",
+      "description": null,
+      "url": "https://github.com/manas0911user/cloud",
+      "languages": {
+        "nodes": [
+          {
+            "name": "Go"
+          },
+          {
+            "name": "JavaScript"
+          },
+          {
+            "name": "HTML"
+          },
+          {
+            "name": "CSS"
+          },
+          {
+            "name": "TypeScript"
+          }
+        ]
+      }
+    },
+    {
+      "name": "neurosynapse-cloud1",
+      "description": null,
+      "url": "https://github.com/manas0911user/neurosynapse-cloud1",
+      "languages": {
+        "nodes": [
+          {
+            "name": "Python"
+          }
+        ]
+      }
+    }
+  ]
+}
