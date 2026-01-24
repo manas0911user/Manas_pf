@@ -2,18 +2,18 @@
 
 // Website related settings
 const settings = {
-  isSplash: true, // Change this to false if you don't want Splash screen.
+  isSplash: true, // Splash screen chahiye to true, nahi chahiye to false
 };
 
-//SEO Related settings
+// SEO Related settings
 const seo = {
-  title: "Manas's Portfolio",
+  title: "Manas Tiwari | Cloud & Software Engineer",
   description:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    "Manas Tiwari's personal portfolio showcasing projects, skills, cloud computing specialization, software development work, and professional journey in tech.",
   og: {
     title: "Manas Tiwari Portfolio",
     type: "website",
-    url: "http://ashutoshhathidara.com/",
+    url: "https://manas-pf.vercel.app/",
   },
 };
 
